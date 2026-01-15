@@ -50,11 +50,27 @@ Vehicle model, manufacturer, and type contribute a significant percentage to res
 
 1. Start with manufacturer/brand specific market averages
 2. Adjust for age (newer = higher premium)
-3. Small adjustments for:
+3. Small adjustments (+/- 5%) for:
 
 - Mileage (low miles = higher price)
 - Transmission type
 - Regional market differences
+
+## Top Recommendations for Dealers
+
+### Immediate Actions
+
+1. **Audit current inventory**
+
+- Identify strong performing models
+- Flag weak models for quick sale, even at lower margins
+- Ignore poor performing models, even if lauded as "good deals"
+
+2. **Update pricing strategy**
+
+- Price based on manufacturer, brand, model specific market data first
+- Adjust for age second
+- Use mileage/features for tweaks
 
 ## Technical Analysis for Data Scientists, R&D
 
@@ -65,3 +81,7 @@ Vehicle model, manufacturer, and type contribute a significant percentage to res
 | PCA + Ridge | 6,978 | Best accuracy, handles multicollinearity | Complex interpretation |
 | RFE + Linear | ~7,030 | Interpretable coefficients | Slightly lower accuracy |
 | Permutation Importance | N/A | True feature impact | Computationally expensive |
+
+![Top Prices for Different Used Vehicle Drivers](/images/prices_via_category.png)
+
+![Correlation Matrix for Various Car Drivers](/images/correlation_matrix.png)
